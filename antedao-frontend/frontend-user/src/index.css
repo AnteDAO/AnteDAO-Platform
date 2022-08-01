@@ -1,0 +1,598 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:regular,bold,italic&subset=latin,latin-ext");
+
+@font-face {
+  font-family: "Inter";
+  src: local("Inter"), url(./styles/fonts/Inter-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Inter-Regular";
+  src: local("Inter-Regular"),
+    url(./styles/fonts/Inter-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Inter-Bold";
+  src: local("Inter-Bold"),
+    url(./styles/fonts/Inter-Bold.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Inter-Light";
+  src: local("Inter-Light"),
+    url(./styles/fonts/Inter-Light.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Inter-Medium";
+  src: local("Inter-Medium"),
+    url(./styles/fonts/Inter-Medium.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Inter";
+  font-weight: 700;
+  src: local("Inter-Bold"),
+    url(./styles/fonts/Inter-Bold.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Inter";
+  font-weight: 900;
+  src: local("Inter-Black"),
+    url(./styles/fonts/Inter-Black.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Inter";
+  font-weight: 600;
+  src: local("Inter-SemiBold"),
+    url(./styles/fonts/Inter-SemiBold.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Inter";
+  font-weight: 500;
+  src: local("Inter-Medium"),
+    url(./styles/fonts/Inter-Medium.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Inter";
+  font-weight: 400;
+  src: local("Inter-Regular"),
+    url(./styles/fonts/Inter-Regular.ttf) format("truetype");
+}
+
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap");
+
+/* Font DM Sans */
+@font-face {
+  font-family: "DMSans";
+  src: local("DMSans"), url(./styles/fonts/DMSans/DMSans-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "DMSans-Regular";
+  src: local("DMSans-Regular"),
+    url(./styles/fonts/DMSans/DMSans-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "DMSans-Bold";
+  font-weight: 700;
+  src: local("DMSans-Bold"),
+    url(./styles/fonts/DMSans/DMSans-Bold.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "DMSans-Italic";
+  src: local("DMSans-Italic"),
+    url(./styles/fonts/DMSans/DMSans-Italic.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "DMSans-Medium";
+  src: local("DMSans-Medium"),
+    url(./styles/fonts/DMSans/DMSans-Medium.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "DMSans-BoldItalic";
+  font-weight: 700;
+  src: local("DMSans-BoldItalic"),
+    url(./styles/fonts/DMSans/DMSans-BoldItalic.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "DMSans-MediumItalic";
+  font-weight: 500;
+  src: local("DMSans-MediumItalic"),
+    url(./styles/fonts/DMSans/DMSans-MediumItalic.ttf) format("truetype");
+}
+
+/* Font Work Sans */
+@font-face {
+  font-family: "WorkSans";
+  src: local("WorkSans"), url(./styles/fonts/WorkSans/WorkSans-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "WorkSans-Regular";
+  src: local("WorkSans-Regular"),
+    url(./styles/fonts/WorkSans/WorkSans-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "WorkSans-Bold";
+  src: local("WorkSans-Bold"),
+    url(./styles/fonts/WorkSans/WorkSans-Bold.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "WorkSans-Italic";
+  src: local("WorkSans-Italic"),
+    url(./styles/fonts/WorkSans/WorkSans-Italic.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "WorkSans-Medium";
+  src: local("WorkSans-Medium"),
+    url(./styles/fonts/WorkSans/WorkSans-Medium.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "WorkSans-BoldItalic";
+  font-weight: 700;
+  src: local("WorkSans-BoldItalic"),
+    url(./styles/fonts/WorkSans/WorkSans-BoldItalic.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "WorkSans-MediumItalic";
+  font-weight: 500;
+  src: local("WorkSans-MediumItalic"),
+    url(./styles/fonts/WorkSans/WorkSans-MediumItalic.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "WorkSans-Light";
+  src: local("WorkSans-Light"),
+    url(./styles/fonts/WorkSans/WorkSans-Light.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "WorkSans-LightItalic";
+  src: local("WorkSans-LightItalic"),
+    url(./styles/fonts/WorkSans/WorkSans-LightItalic.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "WorkSans-SemiBold";
+  font-weight: 600;
+  src: local("WorkSans-SemiBold"),
+    url(./styles/fonts/WorkSans/WorkSans-SemiBold.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "WorkSans-SemiBoldItalic";
+  font-weight: 600;
+  src: local("WorkSans-SemiBoldItalic"),
+    url(./styles/fonts/WorkSans/WorkSans-SemiBoldItalic.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "WorkSans-Thin";
+  src: local("WorkSans-Thin"),
+    url(./styles/fonts/WorkSans/WorkSans-Thin.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "WorkSans-ThinItalic";
+  src: local("WorkSans-ThinItalic"),
+    url(./styles/fonts/WorkSans/WorkSans-ThinItalic.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "icons";
+  src: url("./styles/fonts/icons/icons.eot?hoymjw");
+  src: url("./styles/fonts/icons/icons.eot?hoymjw#iefix")
+      format("embedded-opentype"),
+    url("./styles/fonts/icons/icons.ttf?hoymjw") format("truetype"),
+    url("./styles/fonts/icons/icons.woff?hoymjw") format("woff"),
+    url("./styles/fonts/icons/icons.svg?hoymjw#icons") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="custom-icon-"],
+[class*=" custom-icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "icons" !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.custom-icon-facebook:before {
+  content: "\e900";
+  color: #9f9f9f;
+}
+
+.custom-icon-github:before {
+  content: "\e901";
+  color: #9f9f9f;
+}
+
+.custom-icon-telegram:before {
+  content: "\e902";
+  color: #d01f36;
+}
+
+.custom-icon-twitter:before {
+  content: "\e903";
+  color: #9f9f9f;
+}
+
+body {
+  margin: 0;
+  font-family: "DMSans", "WorkSans", "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", "Inter",
+    "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Inter Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #ffffff;
+  font-size: 14px;
+  margin: 0px;
+}
+
+main {
+  background-color: #f7f8fa;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+a,
+a:hover,
+a:active {
+  text-decoration: none;
+  color: #4a4a4a;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+ol,
+ul {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+input[type="text"][disabled],
+input:disabled {
+  cursor: not-allowed;
+}
+
+.text-danger {
+  color: red;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.text-lowercase {
+  text-transform: lowercase;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+button:disabled {
+  /* khong important file commont */
+  /* background-color: #5d5d5d !important; */
+  /* border-color: #5d5d5d !important; */
+  background-color: #5d5d5d;
+  border-color: #5d5d5d;
+  cursor: not-allowed;
+}
+
+.collapse-css-transition {
+  transition: height 280ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.text-gradient {
+  background: -webkit-#6901FC;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -ms-background-clip: text;
+  -o-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0px 0px #00000000;
+  display: block !important;
+}
+
+.text-secondary {
+  color:#FFFF !important
+}
+
+body > iframe {
+  pointer-events: none;
+}
+
+.version-app {
+  position: fixed;
+  bottom: 5px;
+  right: 5px;
+  color: #fff;
+  font: normal normal 400 14px/21px var(--fontFamily);
+  z-index: 99999;
+}
+
+.ant-empty-normal {
+  margin: 32px 0;
+  color: #424959;
+}
+
+.ant-empty {
+  margin: 0 8px;
+  font-size: 14px;
+  line-height: 1.5715;
+  text-align: center;
+}
+
+.ant-empty-description {
+  margin: 100px 0;
+  color: #424959;
+}
+
+.text_center {
+  display: flex;
+  justify-content: center;
+}
+
+.circle-loading {
+  display: inline-flex;
+  animation: loading 1s infinite;
+}
+
+.circle-loading .div {
+  width: 24px;
+  height: 24px;
+  border: 2px solid #8f57ff;
+  border-radius: 50%;
+  margin: 0 5px;
+}
+
+@keyframes loading {
+  50% {
+    transform: rotate(200deg);
+  }
+
+  75% {
+    transform: rotate(160deg);
+  }
+
+  100% {
+    transform: rotate(180deg);
+  }
+}
+
+div.rnc__base {
+  z-index: 99999;
+}
+
+.MuiInputLabel-outlined {
+  background-color: #171b22;
+  padding: 0 4px !important;
+  color: #919aae !important;
+}
+
+.MuiOutlinedInput-notchedOutline {
+  border: 1px solid #2c313d !important;
+  border-radius: 10px !important;
+}
+
+.MuiOutlinedInput-input {
+  background-color: #171b22 !important;
+  color: #ffffff !important;
+  border-radius: 10px !important;
+}
+
+.fix_1 .MuiOutlinedInput-notchedOutline,
+.fix_1 .MuiOutlinedInput-input {
+  border-radius: 32px !important;
+}
+
+.fix_1 label,
+.fix_2 label {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: #919aae;
+  margin-left: 8px;
+  margin-bottom: 4px;
+}
+
+.fix_2 textarea {
+  padding: 8px 12px;
+  background: #171b22;
+  border: 1px solid #2c313d;
+  border-radius: 10px;
+  color: #ffffff !important;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.fix_2 textarea:focus-visible {
+  outline: #2c313d;
+}
+
+.fix_2 textarea::placeholder {
+  color: #2c323e !important;
+  font-family: "var(--fontFamily)" !important;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+}
+
+.MuiOutlinedInput-input::placeholder {
+  color: #424959 !important;
+  font-family: "var(--fontFamily)" !important;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+}
+
+.MuiPaper-rounded {
+  border-radius: 12px !important;
+  background-color: #1B1B1D !important;
+}
+
+.btn-apply {
+  background: linear-gradient(90deg, #FD849C 0%, #6901FC 100%);
+  border-radius: 99px !important;
+  color: #fff !important;
+  padding: 6px 40px !important;
+}
+
+.btn-close {
+  background: #12161b !important;
+  border-radius: 99px !important;
+  color: #fff !important;
+  padding: 6px 40px !important;
+}
+
+.btn-apply button:disabled {
+  background-color: #5d5d5d !important;
+  border-color: #5d5d5d !important;
+  background-color: #5d5d5d;
+  border-color: #5d5d5d;
+  cursor: not-allowed;
+}
+
+.MuiDialog-paperWidthSm {
+  max-width: 791px !important;
+}
+
+.rnc__notification-item--danger {
+  background-color: none !important;
+  border-left: none !important;
+}
+
+.rnc__notification-close-mark:after {
+  left: 48% !important;
+  top: 44% !important;
+}
+.rnc__notification-item--success .rnc__notification-close-mark:after {
+  content: "\2713";
+  left: 48% !important;
+  top: 50% !important;
+}
+.rnc__notification-item--danger .rnc__notification-close-mark {
+  right: 0 !important;
+  top: 0 !important;
+  margin-left: 2px;
+  min-width: 14px !important;
+  max-width: 14px !important;
+  min-height: 14px !important;
+  max-height: 14px !important;
+}
+.rnc__notification-item--success .rnc__notification-close-mark {
+  right: 0 !important;
+  top: 0 !important;
+  margin-left: 2px;
+  min-width: 14px !important;
+  max-width: 14px !important;
+  max-height: 14px !important;
+  min-height: 14px !important;
+}
+.rnc__notification-item--danger .rnc__notification-close-mark {
+  position: relative;
+  background-color: #ff511a !important;
+}
+
+.rnc__notification-item--danger .rnc__notification-content {
+  display: flex !important;
+  align-items: center !important;
+  padding: 10px 16px !important;
+  background: #272e39;
+  border: 1px solid #ff511a;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+
+.rnc__notification-title {
+  margin-left: 9px;
+  font-family: var(--fontFamily);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: #919aae;
+  margin-bottom: 0px !important;
+  margin-top: 0px !important;
+}
+
+.rnc__notification-timer {
+  visibility: hidden;
+  width: 0 !important;
+  margin: 0 !important;
+}
+
+.rnc__notification-item--success {
+  background-color: none !important;
+  border-left: none !important;
+}
+
+.rnc__notification-item--success .rnc__notification-content {
+  display: flex !important;
+  align-items: center;
+  padding: 10px 16px !important;
+  background: #272e39;
+  border: 1px solid #2adf9e;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+.rnc__notification-item--success .rnc__notification-close-mark {
+  background-color: #28a745;
+  position: relative;
+}
+
+:root {
+  --fontFamily: "DMSans", sans-serif;
+}
