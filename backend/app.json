@@ -1,0 +1,22 @@
+{
+  "apps": [
+    {
+      "name": "AnteDao_Backend",
+      "script": "node server.js",
+      "cwd": "",
+      "watch": false
+    },
+    {
+      "name": "AnteDao_QueueListen",
+      "script": "adonis kue:listen",
+      "cwd": "",
+      "watch": false
+    },
+    {
+      "name": "AnteDao_Scheduler",
+      "script": "adonis scheduler",
+      "cwd": "",
+      "watch": false
+    }
+  ]
+}

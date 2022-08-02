@@ -1,59 +1,121 @@
-# Seedbox project
+# Sotatek Starter Backend
 
-## Deployment Staging
+## Setup
 
 #### Step 1
-Pull latest code:
 ```
-git pull origin develop
+npm i
+npm i -g @adonisjs/cli
 ```
+
 
 #### Step 2
-Deploy Staging: 
-
-(Default server 206 - Required Access by VPN)
 
 ```
-make deploy-all
+docker-compose up -d
 ```
+
+
 
 #### Step 3
-SSH to server 206
+
+Create ``.env`` file
 ```
-ssh sotatek@192.168.1.206
+cp .env.example .env
 ```
+
+Generate app key
+```
+adonis key:generate
+```
+
+
 
 #### Step 4
-Access folder project in:
+Edit .env file to config environment
+
+``Config Database``
+```
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_USER=root
+DB_PASSWORD=
+DB_DATABASE=your_database_name
+```
+
+``Config Redis Queue``
+```
+REDIS_CONNECTION=redis
+REDIS_HOST=127.0.0.1
+REDIS_PORT=6379
+REDIS_PASSWORD=
+KUE_CONNECTION=kue
+```
+
+``Config Mail``
+
+Example: Config mail with MailTrap
 
 ```
-cd /var/www/sotatek_starter
+MAIL_DRIVER=smtp
+SMTP_HOST=smtp.mailtrap.io
+SMTP_PORT=2525
+MAIL_USERNAME=your_mailtrap_username
+MAIL_PASSWORD=your_mailtrap_password
+MAIL_ENCRYPTION=tls
+MAIL_FROM_NAME=Antedao
 ```
+
 
 #### Step 5
-Build Frontend User Project:
-```
-make build-frontend-user
-```
 
-#### Step 6
-Build Frontend Admin Project:
+Create database in your MySQL
+
+And fill ``your_database_name`` to ``.env`` file
+
 ```
-make build-frontend-admin
+DB_DATABASE=your_database_name
 ```
 
+#### Step 6: Run Migrations
 
-#### Step 7
-Build Backend Project:
+Run the following command to run startup migrations.
+
+```js
+adonis migration:run
 ```
-make build-backend
+
+
+#### Step 7: Run seeder
+```js
+adonis seed
+```
+
+#### Step 8: Run
+
+Open another terminal tab and run:
+
+(Note: Need install Redis and setup config in ``.env`` file)
+```
+pm2 start app.json
+```
+
+#### Step 9: Check API Working
+
+Access to check API Working:
+```
+http://localhost:8456
+```
+
+Result:
+```
+It's working
 ```
 
 
 
 
-
-
-
+Enjoy and Finish !!!
 
 
