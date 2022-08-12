@@ -25,11 +25,8 @@ import Landing from "./pages/Landing";
 import InvestorLogin from "./pages/Login/InvestorLogin";
 import NetworkChange from "./pages/NetworkChange";
 import NotFoundPage from "./pages/NotFoundPage";
-import PolkaSmithPrivacyPolicy from "./pages/PolkaSmithPrivacyPolicy";
 import Pools from "./pages/Pools";
-import PrivacyPolicy from "./pages/PrivacyPolicy";
-import InvestorRegister from "./pages/Register/InvestorRegister";
-import Terms from "./pages/Terms";
+// import InvestorRegister from "./pages/Register/InvestorRegister";
 import { clearAlert } from "./store/actions/alert";
 import {
 	NetworkUpdateType, settingAppNetwork
@@ -139,18 +136,9 @@ const Routes: React.FC<RouteComponentProps> = (props: RouteComponentProps) => {
 			}}
 		>
 			<div>
-				<Switch>
-					{/* <Route
-            exact path="/"
-            render={() => <Redirect to={`${'/home'}`} />}
-          /> */}
-					<Route
-						path={`${"/polkasmith-privacy"}`}
-						component={PolkaSmithPrivacyPolicy}
-					/>
+			<Switch>
 					<Route exact path={`${"/dashboard"}`} component={Dashboard} />
 					<Route path={`${"/buy-token/:id"}`} component={BuyToken} />
-					<Route path={"/register"} component={InvestorRegister} />
 					<Route path={"/login"} component={InvestorLogin} />
 					<Route path={"/confirm-email/:token"} component={ConfirmEmail} />
 					<Route path={"/network-change"} component={NetworkChange} />
@@ -159,10 +147,7 @@ const Routes: React.FC<RouteComponentProps> = (props: RouteComponentProps) => {
 					<Route path={"/unstake"} component={Withdraw} />
 					<Route path={"/pools"} component={Pools} />
 					<Route path={"/staking-pools"} component={Stake} />
-					<Route path={"/privacy"} component={PrivacyPolicy} />
-					<Route path={"/terms"} component={Terms} />
 					<Route path={"/"} component={Landing} />
-
 					<Route path={"/coming-soon"} component={ComingSoon} />
 					<Route component={NotFoundPage} />
 				</Switch>
