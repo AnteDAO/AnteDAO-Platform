@@ -64,10 +64,15 @@ function AcceptCurrency(props: any) {
             as={
               <RadioGroup row>
                 <FormControlLabel
-                  value="usdt" control={<Radio />}
-                  label={"USDT"}
+                  value="ante" control={<Radio />}
+                  label={"ANTE"}
                   disabled={isDeployed}
                 />
+                <FormControlLabel
+                value="usdt" control={<Radio />}
+                label={"USDT"}
+                disabled={isDeployed}
+              />
                 <FormControlLabel
                   value="usdc" control={<Radio />}
                   label="USDC"

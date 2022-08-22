@@ -23,6 +23,7 @@ export const ACCEPT_CURRENCY = {
   USDT: 'usdt',
   USDC: 'usdc',
   BUSD: 'busd',
+  ANTE: 'ante'
 };
 export const BUY_TYPE = {
   WHITELIST_LOTTERY: 'whitelist',
@@ -52,6 +53,7 @@ export const PICK_WINNER_RULE = {
   RULE_TIER_3: '3',
 };
 
+export const ANTE_ADDRESS = process.env.REACT_APP_ANTE;
 export const USDT_ADDRESS = process.env.REACT_APP_SMART_CONTRACT_USDT_ADDRESS;
 export const USDC_ADDRESS = process.env.REACT_APP_SMART_CONTRACT_USDC_ADDRESS;
 export const BUSD_ADDRESS = process.env.REACT_APP_SMART_CONTRACT_BUSD_ADDRESS;
@@ -79,7 +81,8 @@ export const MAPPING_CURRENCY_ADDRESS: any = {
     native: NATIVE_TOKEN_ADDRESS,
     usdt: USDT_ADDRESS,
     usdc: USDC_ADDRESS,
-    busd: BUSD_ADDRESS
+    busd: BUSD_ADDRESS,
+    ante: ANTE_ADDRESS,
   },
   'bsc': {
     eth: NATIVE_TOKEN_ADDRESS, // eth for native token
