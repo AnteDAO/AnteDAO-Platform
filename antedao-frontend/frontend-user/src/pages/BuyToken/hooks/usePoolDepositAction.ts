@@ -110,6 +110,8 @@ const usePoolDepositAction = ({
             decimals = 6;
           }else if (acceptCurrency === 'BUSD') {
             decimals = 18;
+          } else if (acceptCurrency === 'ANTE') {
+            decimals = 18;
           }
         }
 
@@ -148,6 +150,9 @@ const usePoolDepositAction = ({
             }
             if (acceptCurrency === "BUSD") {
               buyCurr = process.env.REACT_APP_BUSD_SMART_CONTRACT || '';
+            } 
+            if (acceptCurrency === "ANTE") {
+              buyCurr = process.env.REACT_APP_ANTE || '';
             }
             break;
         }

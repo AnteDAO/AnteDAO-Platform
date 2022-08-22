@@ -8,6 +8,7 @@ import {alertFailure, alertSuccess} from "../../../../store/actions/alert";
 import {convertAmountToUsdt} from "../../../../utils/usdt";
 import {
   ACCEPT_CURRENCY,
+  ANTE_ADDRESS,
   NETWORK_AVAILABLE,
   USDC_ADDRESS,
   USDC_BSC_ADDRESS, USDC_POLYGON_ADDRESS,
@@ -37,6 +38,8 @@ function ApproveButton(props: any) {
         return USDT_ADDRESS;
       } else if (currency == ACCEPT_CURRENCY.USDC) {
         return USDC_ADDRESS;
+      } else if ( currency == ACCEPT_CURRENCY.ANTE) {
+        return ANTE_ADDRESS;
       } else { // ACCEPT_CURRENCY.ETH
         return '0x00';
       }

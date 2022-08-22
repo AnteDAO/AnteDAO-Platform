@@ -2,8 +2,22 @@ import {
   USDT_ADDRESS, USDT_BSC_ADDRESS, USDT_POLYGON_ADDRESS,
   USDC_ADDRESS, USDC_BSC_ADDRESS, USDC_POLYGON_ADDRESS,
   BUSD_BSC_ADDRESS, 
-  ETH_CHAIN_ID, BSC_CHAIN_ID, POLYGON_CHAIN_ID, BUSD_POLYGON_ADDRESS, BUSD_ADDRESS 
+  ETH_CHAIN_ID, BSC_CHAIN_ID, POLYGON_CHAIN_ID, BUSD_POLYGON_ADDRESS, BUSD_ADDRESS, ANTE_BSC_ADDRESS, ANTE_POLYGON_ADDRESS, ANTE_ADDRESS 
 } from '../../constants/network';
+
+export const getANTEAddress = (appChainID: string): string => {
+  switch (appChainID) {
+    case BSC_CHAIN_ID:
+      return ANTE_BSC_ADDRESS as string;
+
+    case POLYGON_CHAIN_ID:
+      return ANTE_POLYGON_ADDRESS as string;
+
+    case ETH_CHAIN_ID:
+    default:
+      return ANTE_ADDRESS as string;
+  }
+}
 
 export const getUSDTAddress = (appChainID: string): string => {
   switch (appChainID) {

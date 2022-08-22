@@ -3,6 +3,7 @@ import moment from "moment";
 import BigNumber from 'bignumber.js';
 import {
   NETWORK_AVAILABLE,
+  ANTE_ADDRESS,
   USDC_ADDRESS,
   USDC_BSC_ADDRESS, USDC_POLYGON_ADDRESS,
   USDT_ADDRESS,
@@ -126,6 +127,9 @@ export const buyTokenWithSignature = async (data: any) => {
     } else if (acceptCurrency === 'USDC') {
       decimals = 6;
       buyCurr = USDC_ADDRESS || ''
+    } else if (acceptCurrency === 'ANTE') {
+      decimals = 18;
+      buyCurr = ANTE_ADDRESS || ''
     }
   } else if (networkAvailable === NETWORK_AVAILABLE.POLYGON) {
     if (acceptCurrency === 'ETH') {

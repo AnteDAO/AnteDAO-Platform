@@ -16,7 +16,7 @@ import { TokenType } from '../../../hooks/useTokenDetails';
 import { useTypedSelector } from '../../../hooks/useTypedSelector';
 import { alertFailure } from "../../../store/actions/alert";
 import { connectWalletSuccess } from '../../../store/actions/wallet';
-import { getBUSDAddress, getUSDCAddress, getUSDTAddress } from '../../../utils/contractAddress/getAddresses';
+import { getANTEAddress, getBUSDAddress, getUSDCAddress, getUSDTAddress } from '../../../utils/contractAddress/getAddresses';
 import {
   convertUnixTimeToDateTime
 } from "../../../utils/convertDate";
@@ -159,6 +159,15 @@ const BuyTokenForm: React.FC<BuyTokenFormProps> = (props: any) => {
   const { retrieveUserPurchased } = useUserPurchased(tokenDetails, poolAddress, ableToFetchFromBlockchain);
 
   const getApproveToken = useCallback((appChainID: string) => {
+    if (purchasableCurrency && purchasableCurrency === PurchaseCurrency.ANTE) {
+      return {
+        address: getANTEAddress(appChainID),
+        name: "ANTE",
+        symbol: "ANTE",
+        decimals: 18,
+      };
+    }
+
     if (purchasableCurrency && purchasableCurrency === PurchaseCurrency.USDT) {
       return {
         address: getUSDTAddress(appChainID),
